@@ -1203,6 +1203,61 @@ body {
 }
 
 /* ========================================
+   CUSTOM STYLES FOR LABEL CONFIANCE
+   ======================================== */
+
+/* Step numbers for La Démarche section */
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 auto 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.demarche-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.demarche-card .testimonial-text {
+    text-align: left;
+    font-style: normal;
+    padding-left: 0;
+}
+
+.demarche-card .testimonial-text::before {
+    display: none;
+}
+
+/* Values grid for 4 values */
+.values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.value-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.value-card:hover {
+    border-left-color: var(--secondary-color);
+}
+
+/* Why section spacing */
+.why-section {
+    background: var(--bg-white);
+}
+
+/* ========================================
    UTILITY CLASSES & ANIMATIONS
    ======================================== */
 
